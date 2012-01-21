@@ -1,0 +1,23 @@
+<script>
+$(document).ready(function(){
+  $("#tabs li a").bind("click", changeTab);
+});
+
+</script>
+
+
+<section id="meaty-middle">
+  <div id="home" class="active">
+    <%= render 'home' %>  
+  </div>
+  <div id="who-we-are" style="display:none;">
+    <%= render '/home/who' %>
+  </div>
+  <div id="what-we-do" style="display:none;">
+    <%= render '/home/what' %>  
+  </div>
+  <div id="how-we-do-it" style="display:none;">
+    <%= render '/home/how' %>  
+  </div>
+  <div id="contact-us" style="display:none;">This is 'contact us'</div>
+</section>
