@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Elastic::Application.config.secret_token = 'f3b4d3f6abc130d33ac0ef9cc247c9f9865f531409e031afcc8370437938df38d84784a522dd48faea3d5d6d313a55e52dbe66b00b9b2fefd937bb21183f9f7e'
+Elastic2::Application.config.secret_token = '13af7a7eb2a3ff2ed1d472a7f7e6452ec03f7a916d7bc5cd21419a4cf38d5d495a1d18c5b4275d12a774744fb20c1001a9d54150fffd43d41c68ebad699f82e7'

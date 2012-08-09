@@ -1,5 +1,16 @@
 class HomeController < ApplicationController
-  def index
+  def show
   end
 
+  def how
+  end
+  
+  def what
+  end
+
+  def who
+  end
+
+  def contact
+  end
 end

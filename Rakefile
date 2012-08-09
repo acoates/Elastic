@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Elastic::Application.load_tasks
+Elastic2::Application.load_tasks
