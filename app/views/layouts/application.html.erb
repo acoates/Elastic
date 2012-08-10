@@ -19,14 +19,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#"><i class="icon-home"></i> Elastic</a>
+				<%= link_to 'Elastic', root_path, :class => "brand" %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Who We Are" %></li>
-            <li><%= link_to "What We Do" %></li>
-            <li><%= link_to "How We Do It" %></li>
-            <li><%= link_to "Contact Us" %></li>
-            <li><%= link_to "The Team" %></li>
+            <li class='<%= 'active' if current_page?(who_path) %>'><%= link_to "Who We Are", who_path %></li>
+            <li class='<%= 'active' if current_page?(what_path) %>'><%= link_to "What We Do", what_path %></li>
+            <li class='<%= 'active' if current_page?(how_path) %>'><%= link_to "How We Do It", how_path %></li>
+            <li class='<%= 'active' if current_page?(contact_path) %>'><%= link_to "Contact Us", contact_path %></li>
+            <li class='<%= 'active' if current_page?(team_path) %>'><%= link_to "Elastic Team", team_path %></li>
           </ul>
         </div>
       </div>
