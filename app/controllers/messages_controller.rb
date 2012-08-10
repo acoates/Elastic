@@ -8,9 +8,9 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     if @message.valid?
       # TODO send message here
-      flash[:notice] = "Message sent! Thank you for contacting us."
-      redirect_to root_url
+      redirect_to root_url, notice: "Message sent! Thank you for contacting us."
     else
-      render :action => 'new'
+      render "new"
     end
+  end
 end
