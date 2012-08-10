@@ -1,7 +1,11 @@
 Elastic2::Application.routes.draw do
 
   root :to => 'home#show'
-
+  match '/how' => 'home#how', :via => :get, :as => 'how'
+  match '/what' => 'home#what', :via => :get, :as => 'what'
+  match '/who' => 'home#who', :via => :get, :as => 'who'
+  match '/contact' => 'home#contact', :via => :get, :as => 'contact'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
