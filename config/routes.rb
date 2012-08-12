@@ -1,4 +1,4 @@
-Elastic2::Application.routes.draw do
+Elastic::Application.routes.draw do
 
   root :to => 'home#show'
   match '/how' => 'home#how', :via => :get, :as => 'how'
