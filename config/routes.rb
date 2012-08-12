@@ -5,6 +5,7 @@ Elastic::Application.routes.draw do
   match '/what' => 'home#what', :via => :get, :as => 'what'
   match '/who' => 'home#who', :via => :get, :as => 'who'
   match '/contact' => 'messages#new', :via => :get, :as => 'messages'
+  match '/contact' => 'messages#create', :via => :post, :as => 'messages'
   match '/team' => 'home#team', :via => :get, :as => 'team'
   match '/testimonials' => 'home#testimonials', :via => :get, :as => 'testimonials'
   
