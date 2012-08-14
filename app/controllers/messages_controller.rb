@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       ElasticMailer.signup_notification(@message).deliver
-      redirect_to root_url, notice: "Message sent! Thank you for contacting us."
+      redirect_to request.referrer, notice: "Message sent! Thank you for contacting us."
     else
       render 
     end
