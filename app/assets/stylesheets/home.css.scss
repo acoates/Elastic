@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {  
+  font-family: 'Miama';  
+  src: url(Miama.ttf) format("truetype");  
+}  
+
+.Miama { font-family: Miama , verdana, helvetica, sans-serif;  
+}   
+
 #nav
 {
   background: url(Elastic_Header.jpg) no-repeat left center;
@@ -13,7 +21,14 @@
   }
   a
   {
+    font: miama;
     color:#FFFFFF;
+  }
+  a:hover{
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    transform: scale(1.1);
   }
   li a
   {
@@ -27,7 +42,11 @@
     -moz-transform: scale(1.1); 
     -o-transform: scale(1.1); 
     transform: scale(1.1);
-  }
-  
+  }  
+}
+
+#section-preview p
+{
+  color: #808080;
 }
 
