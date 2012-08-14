@@ -2,3 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#nav
+{
+  background: url(Elastic_Header.jpg) no-repeat left center;
+  background-color:#828EC2;
+  background-position:right;
+  .active > a
+  {   
+    background-color: #B2BCDF;
+  }
+  a
+  {
+    color:#FFFFFF;
+  }
+  li a
+  {
+    font: normal "LeagueGothicRegular", Tahoma, Arial, sans-serif;
+    text-shadow: 1px 1px 1px #9450E2;
+    position: relative;
+    color:#FFFFFF;
+  }
+  
+}
+
