@@ -21,7 +21,6 @@
   }
   a
   {
-    font: miama;
     color:#FFFFFF;
   }
   a:hover{
@@ -43,6 +42,24 @@
     -o-transform: scale(1.1); 
     transform: scale(1.1);
   }  
+  div.in{
+    background-color:#828EC2;
+    margin-right:-50px;
+  }
+  div.in li{
+    max-width: 150px;
+  }
+  div.in li a:hover{
+    background-color: #828EC2;
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    transform: scale(1.1);
+  }
+
+
+  
+
 }
 
 #section-preview p
