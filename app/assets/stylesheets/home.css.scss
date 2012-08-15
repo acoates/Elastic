@@ -57,10 +57,14 @@
     -o-transform: scale(1.1); 
     transform: scale(1.1);
   }
+}
 
-
-  
-
+div.page-header{
+  border-bottom: 5px dotted #828EC2;
+  h1{
+    font-family: Miama , verdana, helvetica, sans-serif;
+    font-size:450%;
+  }
 }
 
 #section-preview p
