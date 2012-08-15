@@ -8,7 +8,12 @@
 }  
 
 .Miama { font-family: Miama , verdana, helvetica, sans-serif;  
-}   
+}
+   
+h1{
+  font-family: Miama , verdana, helvetica, sans-serif;
+  font-size: xx-large;
+}
 
 #nav
 {
@@ -61,13 +66,19 @@
 
 div.page-header{
   border-bottom: 5px dotted #828EC2;
-  h1{
-    font-family: Miama , verdana, helvetica, sans-serif;
-  }
 }
 
-#section-preview p
-{
-  color: #808080;
+#section-preview{
+  p{
+    color: #707070;
+  }
+  h2{
+    a:link, a:visited
+    { 
+      font-family: Miama , verdana, helvetica, sans-serif;
+      font-size: xx-large;
+      color: #828EC2;
+    }
+  }
 }
 
