@@ -83,9 +83,16 @@ border: 2px solid #9450E2;
   h2{
     a:link, a:visited
     { 
-      font-family: Miama , verdana, helvetica, sans-serif;
-      font-size: x-large;
       color: #828EC2;
+      font-family: Miama , verdana, helvetica, sans-serif;
+      font-size: x-large;      
+    }
+    a:hover {
+      color: #828EC2;
+      -webkit-transform: scale(1.1); 
+      -moz-transform: scale(1.1); 
+      -o-transform: scale(1.1); 
+      transform: scale(1.1);
     }
   }
 }
