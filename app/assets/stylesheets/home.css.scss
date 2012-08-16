@@ -7,7 +7,7 @@
   src: url("Miama.ttf") format("truetype");  
 }  
 
-.Miama { font-family: Miama , verdana, helvetica, sans-serif;  
+.Miama { font-family: Miama , verdana, helvetica, sans-serif; color: #828EC2;  
 }
    
 h1{
@@ -70,14 +70,13 @@ div.page-header{
 
 #section-preview{
   p{
-    color: #707070;
+    color: #808080;
   }
   h2{
     a:link, a:visited
     { 
       font-family: Miama , verdana, helvetica, sans-serif;
-      font-size: xx-large;
-      color: #828EC2;
+      font-size: x-large;
     }
   }
 }
