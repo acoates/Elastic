@@ -4,43 +4,50 @@
       <h1>Get In Touch</h1>
     </div>
   </header>
-  <%= form_for @message, :class => "form-horizontal" do |f| %>
-    <% if @message.errors.any? %>
-      <div class="error_messages">
-        <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
-        <ul>
-        <% @message.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-    
-    <table class="table-striped" style="width:100%">
-    <tr>
-      <div class="field">
-        <td><%= f.text_field :name, :placeholder => raw("Name&#42;") %></td>
-      </div>
-    </tr>
-    <tr>
-      <div class="field">
-        <td><%= f.text_field :email, :placeholder => raw("Email&#42;") %></td>
-      </div>
-    </tr>
-    <tr>
-      <div class="field">
-        <td><%= f.text_field :phone, :placeholder => "Phone" %></td>
-      </div>
-    </tr>
-    <tr>
-      <div class="field">
-        <td><%= f.text_area :content, :rows => 5, :placeholder => raw("Message&#42;") %></td>
-      </div>
-    </tr>
-    </tbody>
-    </table>
-    <div><%= f.submit "Send Message", :class => "btn btn-primary" %></div>
+  <div class="span8">
+
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
   <% end %>
+
+    <%= form_for @message, :class => "form-horizontal" do |f| %>
+      <% if @message.errors.any? %>
+        <div class="error_messages">
+          <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+          <ul>
+          <% @message.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      
+      <table class="table-striped" style="width:100%">
+      <tr>
+        <div class="field">
+          <td><%= f.text_field :name, :placeholder => raw("Name&#42;") %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><%= f.text_field :email, :placeholder => raw("Email&#42;") %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><%= f.text_field :phone, :placeholder => "Phone" %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><%= f.text_area :content, :rows => 5, :placeholder => raw("Message&#42;"), :style => "width:70%;height:150px;" %></td>
+        </div>
+      </tr>
+      </tbody>
+      </table>
+      <div><%= f.submit "Send Message", :class => "btn btn-primary" %></div>
+    <% end %>
+  </div>
 </section>
 
 
