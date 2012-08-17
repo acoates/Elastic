@@ -3,16 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {  
-  font-family: 'Miama';  
-  src: url("Miama.ttf") format("truetype");  
+  font-family: 'MarketingScript';  
+  src: url("MarketingScript.ttf") format("truetype");  
 }  
 
-.Miama { font-family: Miama , verdana, helvetica, sans-serif; color: #828EC2;  
+.MarketingScript { font-family: MarketingScript , verdana, helvetica, sans-serif; color: #828EC2;  
 }
    
 h1{
-  font-family: Miama , verdana, helvetica, sans-serif;
+  font-family: MarketingScript , verdana, helvetica, sans-serif;
   font-size: xx-large;
+}
+
+.lead{
+  font-size: medium;
 }
 
 #nav
@@ -84,7 +88,7 @@ border: 2px solid #9450E2;
     a:link, a:visited
     { 
       color: #828EC2;
-      font-family: Miama , verdana, helvetica, sans-serif;
+      font-family: MarketingScript , verdana, helvetica, sans-serif;
       font-size: x-large;      
     }
     a:hover {
