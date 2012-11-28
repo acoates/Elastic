@@ -4,14 +4,14 @@
 
 @font-face {  
   font-family: 'Fontella';  
-  src: url("/assets/Fontella.ttf");
+  src: url("Fontella.ttf") format("truetype");  
 }  
 
-.Fontella { font-family: Fontella, verdana, helvetica, sans-serif; color: #828EC2;  
+.Fontella { font-family: Fontella , verdana, helvetica, sans-serif; color: #828EC2;  
 }
    
 h1{
-  font-family: Fontella, verdana, helvetica, sans-serif;
+  font-family: Fontella , verdana, helvetica, sans-serif;
   font-size: xx-large;
   color: #606060;
 }
@@ -89,7 +89,7 @@ border: 2px solid #9450E2;
     a:link, a:visited
     { 
       color: #828EC2;
-      font-family: Fontella, verdana, helvetica, sans-serif;
+      font-family: Fontella , verdana, helvetica, sans-serif;
       font-size: x-large;      
     }
     a:hover {
