@@ -3,15 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {  
-  font-family: 'fontella';  
-  src: url("fontella.ttf") format("truetype");  
+  font-family: 'Fontella';  
+  src: url("fontella.ttf") format("truetype");
+  src: local("?"),
+  url("fontella.ttf") format("woff");
 }  
 
-.fontella { font-family: fontella, verdana, helvetica, sans-serif; color: #828EC2;  
+.Fontella { font-family: Fontella, verdana, helvetica, sans-serif; color: #828EC2;  
 }
    
 h1{
-  font-family: fontella, verdana, helvetica, sans-serif;
+  font-family: Fontella, verdana, helvetica, sans-serif;
   font-size: xx-large;
   color: #606060;
 }
@@ -89,7 +91,7 @@ border: 2px solid #9450E2;
     a:link, a:visited
     { 
       color: #828EC2;
-      font-family: fontella, verdana, helvetica, sans-serif;
+      font-family: Fontella, verdana, helvetica, sans-serif;
       font-size: x-large;      
     }
     a:hover {
