@@ -4,9 +4,7 @@
 
 @font-face {  
   font-family: 'Fontella';  
-  src: url("fontella.ttf") format("truetype");
-  src: local("?"),
-  url("fontella.ttf") format("woff");
+  src: url("/assets/Fontella.ttf");
 }  
 
 .Fontella { font-family: Fontella, verdana, helvetica, sans-serif; color: #828EC2;  
