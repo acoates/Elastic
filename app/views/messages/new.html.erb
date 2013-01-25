@@ -24,21 +24,33 @@
       
       <table class="table-striped" style="width:100%">
       <tr>
+        <!--[if IE]>
+	        <p>Name: </p>
+        <![endif]-->
         <div class="field">
           <td><%= f.text_field :name, :placeholder => raw("Name&#42;") %></td>
         </div>
       </tr>
       <tr>
+        <!--[if IE]>
+	        <p>Email: </p>
+        <![endif]-->
         <div class="field">
           <td><%= f.text_field :email, :placeholder => raw("Email&#42;") %></td>
         </div>
       </tr>
       <tr>
+        <!--[if IE]>
+	        <p>Phone: </p>
+        <![endif]-->
         <div class="field">
           <td><%= f.text_field :phone, :placeholder => "Phone" %></td>
         </div>
       </tr>
       <tr>
+        <!--[if IE]>
+	        <p>Message: </p>
+        <![endif]-->
         <div class="field">
           <td><%= f.text_area :content, :rows => 5, :placeholder => raw("Message&#42;"), :style => "width:70%;height:150px;" %></td>
         </div>
