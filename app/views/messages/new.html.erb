@@ -25,10 +25,12 @@
       <table class="table-striped" style="width:100%">
       <tr>
         <div class="field">
-          <!--[if IE]>
-	          <p>Name: </p>
-          <![endif]-->
-          <td><%= f.text_field :name, :placeholder => raw("Name&#42;") %></td>
+          <td>
+            <!--[if IE]>
+	            <p>Name: </p>
+            <![endif]-->
+            <%= f.text_field :name, :placeholder => raw("Name&#42;") %>
+          </td>
         </div>
       </tr>
       <tr>
